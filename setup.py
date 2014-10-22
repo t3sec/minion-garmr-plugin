@@ -5,7 +5,7 @@
 from setuptools import setup
 
 install_requires = [
-    'minion.plugin_service',
+    'minion-backend',
     'Garmr==0.3'
 ]
 
@@ -16,6 +16,6 @@ setup(name="minion.garm_plugin",
       author="Mozilla",
       author_email="minion@mozilla.com",
       packages=['minion', 'minion.plugins'],
-      namespace_packages=['minion.plugins'],
+      namespace_packages=['minion', 'minion.plugins'],
       include_package_data=True,
       install_requires = install_requires)
