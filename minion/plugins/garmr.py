@@ -5,7 +5,7 @@
 
 import json
 import os
-from minion.plugin_api import ExternalProcessPlugin
+from minion.plugins.base import ExternalProcessPlugin
 
 def _get_test_name(s):
     return s.split('.')[-1]
